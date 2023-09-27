@@ -29,8 +29,9 @@ npm ci
 npm start
 ```
 
-and try to find 3 Easter ~~Eggs~~ Cats that I hid in the app.
+and **try to find 3 Easter ~~Eggs~~ Cats** that I hid in the app.
 
 Enjoy!
 
-<img width="540" alt="image" src="https://github.com/perioad/mi-afec/assets/45464847/9162714c-b3ce-4b5b-835f-d14566829f8e">
+<img width="269" alt="image" src="https://github.com/perioad/mi-afec/assets/45464847/3384092c-b49e-4502-aa1f-9364b6bd5cdc">
+
