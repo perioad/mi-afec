@@ -1,0 +1,29 @@
+:host {}
+
+.search__input {
+	height: 30px;
+	border-radius: 3px 0 0 3px;
+	border: 1px solid lightgray;
+	border-right: none;
+	box-sizing: border-box;
+
+	&:focus-visible {
+		border-top: 1px solid #3b9bff;
+		border-left: 1px solid #3b9bff;
+		border-bottom: 1px solid #3b9bff;
+		outline: none;
+	}
+}
+
+.search__button {
+	height: 30px;
+	border-radius: 0 3px 3px 0;
+	border: none;
+	background-color: #3b9bff;
+	color: white;
+
+	&:hover {
+		background-color: #1988ff;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,44 @@
+<h1 class="title">{{ title }}</h1>
+
+<form [formGroup]="videoForm" class="form" (ngSubmit)="submit()">
+  <mat-form-field>
+    <mat-label>Video name</mat-label>
+
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Video author</mat-label>
+
+    <mat-select formControlName="authorId">
+      <mat-option *ngFor="let author of authors" [value]="author.id">
+        {{ author.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Video category</mat-label>
+
+    <mat-select multiple formControlName="categoriesIds">
+      <mat-option *ngFor="let category of categories" [value]="category.id">
+        {{ category.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="controls">
+    <button mat-flat-button type="button" (click)="cancel()">Cancel</button>
+
+    <button
+      mat-flat-button
+      color="primary"
+      type="submit"
+      [disabled]="isSubmitDisabled"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+
+<mi-cat-omg *ngIf="!isSubmitDisabled" @enterLeaveSlideAnimation></mi-cat-omg>

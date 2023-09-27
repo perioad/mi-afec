@@ -1,0 +1,32 @@
+<header class="header">
+  <span class="title"> Videos </span>
+
+  <nav>
+    <a
+      class="link"
+      mat-button
+      routerLink="/home"
+      [routerLinkActive]="['link--active']"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      mat-button
+      routerLink="/faq"
+      [routerLinkActive]="['link--active']"
+    >
+      FAQ
+    </a>
+  </nav>
+
+  <button
+    *ngIf="isAddVideoDisplayed$ | async"
+    mat-flat-button
+    color="primary"
+    class="add-video"
+    routerLink="add-video"
+  >
+    {{ 'Add video' }}
+  </button>
+</header>

@@ -1,11 +1,7 @@
-<header class="header">
-  Videos
-  <mi-button [primary]="true" [text]="'Add video'"></mi-button>
-</header>
+<mi-header></mi-header>
 
 <main class="main">
-  <h1>VManager Demo v0.0.1</h1>
-  <mi-videos-table [videos]="videos"></mi-videos-table>
+  <router-outlet></router-outlet>
 </main>
 
-<footer class="footer">VManager Demo v0.0.1</footer>
+<mi-footer></mi-footer>

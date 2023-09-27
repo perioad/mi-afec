@@ -1,0 +1,13 @@
+<mi-video-form
+  *ngIf="video$ | async as video; else notFound"
+  [title]="getTitle(video.name)"
+  [authors]="(authors$ | async) ?? []"
+  [categories]="(categories$ | async) ?? []"
+  [video]="video"
+  (submitted)="editVideo($event, video)"
+>
+</mi-video-form>
+
+<ng-template #notFound>
+  <mi-video-not-found></mi-video-not-found>
+</ng-template>

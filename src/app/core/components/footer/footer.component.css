@@ -1,0 +1,8 @@
+:host {
+	margin-top: auto;
+}
+
+.footer {
+	padding: 16px;
+	background: var(--light-gray);
+}

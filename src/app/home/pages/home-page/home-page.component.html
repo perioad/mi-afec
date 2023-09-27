@@ -1,0 +1,7 @@
+<h1>VManager Demo v0.0.1</h1>
+
+<mi-video-table
+  [videos]="(videos$ | async)!"
+  (deleteVideo)="deleteVideo($event)"
+  (editVideo)="editVideo($event)"
+></mi-video-table>

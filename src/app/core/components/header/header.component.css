@@ -1,0 +1,23 @@
+.header {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	background: var(--light-gray);
+	gap: 50px;
+}
+
+.title {
+	font-size: 20px;
+}
+
+.link {
+	color: white;
+}
+
+.link--active {
+	font-weight: bold;
+}
+
+.add-video {
+	margin-left: auto;
+}

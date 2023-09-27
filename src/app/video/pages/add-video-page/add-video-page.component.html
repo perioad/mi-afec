@@ -1,0 +1,7 @@
+<mi-video-form
+  title="Add video"
+  [authors]="(authors$ | async) ?? []"
+  [categories]="(categories$ | async) ?? []"
+  (submitted)="addVideo($event)"
+>
+</mi-video-form>
